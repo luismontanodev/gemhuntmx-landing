@@ -25,7 +25,7 @@ export const TextContainer = styled.div`
 export const FormContainer = styled.div`
 	width: 85%;
 	height: 40vh;
-	/* 
+	/*
 	background-color: cadetblue; */
 
 	position: relative;
@@ -36,10 +36,14 @@ export const FooterContainer = styled.div`
 	width: 100%;
 	height: 30vh;
 
-	background-color: silver;
+	background-color: #543a57;
 
 	position: relative;
 	top: 15%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 `;
 
 export const TitleText = styled.h1`
@@ -106,4 +110,47 @@ export const SubmitButton = styled.button`
 	border-radius: 5px;
 
 	margin-top: 5%;
+`;
+
+export const FooterElementsContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 80%;
+	height: 25vh;
+	/* background-color: blue; */
+`;
+
+export const SocialNetworkIconsContainer = styled.div`
+	display: flex;
+	justify-content: space-evenly;
+
+	width: 100%;
+	height: 10vh;
+
+	position: relative;
+	top: 30%;
+
+	/* background-color: bisque; */
+`;
+
+export const CopyrightContainer = styled.div`
+	width: 100%;
+	height: 10vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background-color: rebeccapurple; */
+
+	position: relative;
+	top: 15%;
+`;
+
+export const CopyrightLabel = styled.p`
+	font-weight: 500;
+	font-size: 1rem;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
 `;

@@ -1,12 +1,24 @@
 import React from "react";
+
+import {
+	FaFacebook,
+	FaInstagram,
+	FaPinterest,
+	FaXTwitter,
+} from "react-icons/fa6";
+
 import {
 	ContactContainer,
+	CopyrightContainer,
+	CopyrightLabel,
 	EmailInput,
 	FooterContainer,
+	FooterElementsContainer,
 	FormContainer,
 	FormElementsContainer,
 	MessageTextArea,
 	NameInput,
+	SocialNetworkIconsContainer,
 	SubmitButton,
 	SubtitleText,
 	TextContainer,
@@ -37,7 +49,21 @@ export const Component = () => {
 					<SubmitButton>Submit</SubmitButton>
 				</FormElementsContainer>
 			</FormContainer>
-			<FooterContainer></FooterContainer>
+			<FooterContainer>
+				<FooterElementsContainer>
+					<SocialNetworkIconsContainer>
+						<FaInstagram size={30} color="white" />
+						<FaXTwitter size={30} color="white" />
+						<FaFacebook size={30} color="white" />
+						<FaPinterest size={30} color="white" />
+					</SocialNetworkIconsContainer>
+					<CopyrightContainer>
+						<CopyrightLabel>
+							Copyright ® Gemhuntmx. All rights reserved
+						</CopyrightLabel>
+					</CopyrightContainer>
+				</FooterElementsContainer>
+			</FooterContainer>
 		</ContactContainer>
 	);
 };
