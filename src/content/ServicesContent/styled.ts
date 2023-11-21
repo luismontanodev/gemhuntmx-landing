@@ -1,85 +1,102 @@
 import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
-	width: 100%;
-	height: 100vh;
+	@media (max-width: 768px) {
+		width: 100%;
+		height: 100vh;
 
-	/* background-color: black; */
+		/* background-color: black; */
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	background-color: #1f1a23;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 `;
 
 export const TextContainer = styled.div`
-	width: 85%;
-	height: 20vh;
+	@media (max-width: 768px) {
+		width: 85%;
+		height: 20vh;
 
-	/* background-color: gray; */
+		/* background-color: gray; */
 
-	position: relative;
-	top: 5%;
+		position: relative;
+		top: 5%;
+	}
 `;
 
 export const ImagesContainer = styled.div`
-	width: 98%;
-	height: 50vh;
+	@media (max-width: 768px) {
+		width: 98%;
+		height: 50vh;
 
+		position: relative;
+		top: 5%;
+	}
 	background-color: blanchedalmond;
-
-	position: relative;
-	top: 5%;
 `;
 
 export const KnowMoreButtonContainer = styled.div`
-	width: 35%;
-	height: 5vh;
+	@media (max-width: 768px) {
+		width: 35%;
+		height: 5vh;
 
-	/* background-color: rebeccapurple; */
+		/* background-color: rebeccapurple; */
 
-	position: relative;
-	top: 13%;
+		position: relative;
+		top: 13%;
+	}
 `;
 
 export const IconContainer = styled.div`
-	width: 15%;
-	height: 4vh;
+	@media (max-width: 768px) {
+		width: 15%;
+		height: 4vh;
 
-	/* background-color: burlywood; */
+		/* background-color: burlywood; */
 
-	position: relative;
-	top: 20%;
+		position: relative;
+		top: 20%;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 `;
 
 export const TitleText = styled.h1`
-	color: white;
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-	font-size: 2rem;
-	font-weight: bold;
+	@media (max-width: 768px) {
+		color: white;
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+		font-size: 2rem;
+		font-weight: bold;
 
-	text-align: center;
+		text-align: center;
 
-	margin-bottom: 5%;
+		margin-bottom: 5%;
+	}
 `;
 
 export const SubtitleText = styled.p`
-	color: white;
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	@media (max-width: 768px) {
+		color: white;
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
-	text-align: center;
+		text-align: center;
+	}
 `;
 
 export const KnowMoreButton = styled.button`
+	@media (max-width: 768px) {
+		width: 100%;
+		height: 4vh;
+		font-size: 1.3rem;
+		font-weight: bold;
+	}
 	background-color: #914f99;
-	width: 100%;
-	height: 4vh;
 	cursor: pointer;
 
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -88,8 +105,6 @@ export const KnowMoreButton = styled.button`
 	border-style: none;
 
 	color: white;
-	font-size: 1.3rem;
-	font-weight: bold;
 	transition: background-color 0.2s;
 
 	&:hover {

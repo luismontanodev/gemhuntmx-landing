@@ -1,10 +1,12 @@
 import React from "react";
 
-import { FaChevronDown } from "react-icons/fa6";
+import { FaChevronDown, FaPlus } from "react-icons/fa6";
 
 import {
 	IconContainer,
-	ImagesContainer,
+	KnowMoreContainer,
+	KnowMoreIconContainer,
+	KnowMoreText,
 	MainContentContainer,
 	SubtitleText,
 	TextContainer,
@@ -17,8 +19,13 @@ export const Component = () => {
 			<TextContainer>
 				<TitleText>Lorem Ipsum anaudifamam</TitleText>
 				<SubtitleText>JEWELRY</SubtitleText>
+				<KnowMoreContainer>
+					<KnowMoreIconContainer>
+						<FaPlus color="white" size={12} />
+					</KnowMoreIconContainer>
+					<KnowMoreText>Know more...</KnowMoreText>
+				</KnowMoreContainer>
 			</TextContainer>
-			<ImagesContainer></ImagesContainer>
 			<IconContainer>
 				<FaChevronDown size={40} color="white" />
 			</IconContainer>
