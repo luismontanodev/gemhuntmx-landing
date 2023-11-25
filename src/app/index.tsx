@@ -4,6 +4,7 @@ import { MainContent } from "../content/MainContent";
 import { CatalogueContent } from "../content/CatalogueContent";
 import { ServicesContent } from "../content/ServicesContent";
 import { ContactContent } from "../content/ConcactContent";
+import { ProductCard } from "../components/ProductCard";
 
 export const App = () => {
 	return (

@@ -7,6 +7,8 @@ import {
 	ImagesContainer,
 	KnowMoreButton,
 	KnowMoreButtonContainer,
+	PrimaryImage,
+	SecondaryImage,
 	ServicesContainer,
 	SubtitleText,
 	TextContainer,
@@ -22,7 +24,10 @@ export const Component = () => {
 					Lorem ipsum dolor sit amet audi fam consectetur adipiscing elit.
 				</SubtitleText>
 			</TextContainer>
-			<ImagesContainer></ImagesContainer>
+			<ImagesContainer>
+				<PrimaryImage src="https://images.pexels.com/photos/6263143/pexels-photo-6263143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+				<SecondaryImage src="https://images.pexels.com/photos/848205/pexels-photo-848205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+			</ImagesContainer>
 			<KnowMoreButtonContainer>
 				<KnowMoreButton>Know more</KnowMoreButton>
 			</KnowMoreButtonContainer>

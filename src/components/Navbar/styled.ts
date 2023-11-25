@@ -41,4 +41,17 @@ export const MenuContainer = styled.div`
 		align-items: center;
 		justify-content: center;
 	}
+
+	@media (min-width: 768px) {
+		width: 10%;
+		height: 70%;
+
+		background-color: #1f1a23;
+
+		margin-right: 10%;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 `;

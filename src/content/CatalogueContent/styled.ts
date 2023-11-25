@@ -4,7 +4,17 @@ export const CatalogueContainer = styled.div`
 	@media (max-width: 768px) {
 		width: 100%;
 		height: 100vh;
-		background-color: #dad9d9;
+		background-color: #f5f5f5;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	@media (min-width: 768px) {
+		width: 100%;
+		height: 100vh;
+		background-color: #f5f5f5;
 
 		display: flex;
 		flex-direction: column;
@@ -24,16 +34,65 @@ export const TextContainer = styled.div`
 		align-items: center;
 		justify-content: center;
 	}
-`;
 
-export const ImageCarouselContainer = styled.div`
-	@media (max-width: 768px) {
-		width: 100%;
-		height: 40vh;
-		background-color: rebeccapurple;
+	@media (min-width: 768px) {
+		width: 85%;
+		height: 15vh;
 
 		position: relative;
-		top: 15%;
+		top: 5%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+`;
+
+export const ImageProductContainer = styled.div`
+	@media (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+
+		width: 100%;
+		height: auto;
+		/* background-color: rebeccapurple; */
+
+		position: relative;
+		top: 10%;
+	}
+
+	@media (min-width: 768px) {
+		display: flex;
+		flex-direction: column;
+
+		width: 100%;
+		height: auto;
+		/* background-color: rebeccapurple; */
+
+		position: relative;
+		top: 10%;
+	}
+`;
+
+export const FirstProductContainer = styled.div`
+	@media (max-width: 768px) {
+		display: flex;
+	}
+
+	@media (min-width: 768px) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+`;
+
+export const SecondProductContainer = styled.div`
+	@media (max-width: 768px) {
+		display: flex;
+	}
+
+	@media (min-width: 768px) {
+		display: flex;
 	}
 `;
 
@@ -43,7 +102,15 @@ export const ShopButtonContainer = styled.div`
 		height: 5vh;
 
 		position: relative;
-		top: 25%;
+		top: 15%;
+	}
+
+	@media (min-width: 768px) {
+		width: 40%;
+		height: 5vh;
+
+		position: relative;
+		top: 15%;
 	}
 `;
 
@@ -54,7 +121,20 @@ export const IconContainer = styled.div`
 		/* background-color: black; */
 
 		position: relative;
-		top: 35.5%;
+		top: 23%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	@media (min-width: 768px) {
+		width: 10%;
+		height: 4vh;
+		/* background-color: black; */
+
+		position: relative;
+		top: 20%;
 
 		display: flex;
 		justify-content: center;
@@ -68,12 +148,26 @@ export const TitleText = styled.h1`
 		font-weight: 500;
 		color: #1d1d1c;
 	}
+
+	@media (min-width: 768px) {
+		font-family: "Courier New", Courier, monospace;
+		font-weight: 500;
+		color: #1d1d1c;
+	}
 `;
 
 export const SubtitleText = styled.p`
 	@media (max-width: 768px) {
 		font-family: "Courier New", Courier, monospace;
-		font-weight: 400;
+		font-weight: 500;
+		color: #1d1d1c;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	@media (min-width: 768px) {
+		font-family: "Courier New", Courier, monospace;
+		font-weight: 500;
 		color: #1d1d1c;
 		font-size: 1.5rem;
 		text-align: center;
@@ -82,6 +176,13 @@ export const SubtitleText = styled.p`
 
 export const ShopNowButton = styled.button`
 	@media (max-width: 768px) {
+		width: 100%;
+		height: 4vh;
+
+		font-size: 1.3rem;
+	}
+
+	@media (min-width: 768px) {
 		width: 100%;
 		height: 4vh;
 
